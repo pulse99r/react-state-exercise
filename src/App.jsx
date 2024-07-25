@@ -11,10 +11,15 @@ function App() {
     setCount(count - 2)
   }
   return (
-    <div className='App'>
-      <h1 className='counter'>{count}</h1>
-      <button onClick={incrementCount}>+5</button>
-      <button onClick={decrementCount}>-2</button>
+    <div className='app'>
+      <div className='countLbl'>
+        <h1>count</h1>
+        <h1 className='counter'>{count}</h1>
+      </div>
+      <div className="countBtns">
+        <button onClick={incrementCount}>+5</button>
+        <button onClick={decrementCount}>-2</button>
+      </div>
       <Calculatator /> 
     </div>
   )
